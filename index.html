@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span class="background"></span>
+    <span class="centering">
+        <form class="my-form" action="">
+            <span class="login-welcome-row">
+                <img class="login-welcome" src="as.webp" alt="">
+
+                <!-- optimize the image in production -->
+                <h1>LogIn</h1>
+            </span>
+            <div class="text-field">
+                <label for="email">Email:</label>
+                <input aria-label="Email" type="text" id="email" placeholder="Your Email" required>
+                <img src="email.png" alt="Email Icon" title="Email Icon">
+            </div>
+
+            <div class="text-field">
+                <label for="password">Password:</label>
+                <input id="password" type="password" aria-label="Password" name="password" placeholder="Your Password" title="minimum 6 characters at least 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+
+                <img src="key.png" alt="Password Icon" title="Password Icon">
+            </div>
+            <input type="submit" class="my-form__button" value="Login">
+            <div class="my-form__actions">
+                <div class="my-form__row">
+                    <span>Did you forget your password?</span>
+                    <a href="#" title="Reset Password">Reset Password</a>
+                </div>
+                <div class="my-form__signup">
+                    <a href="#" title="Creat Account">Creat Account</a>
+                </div>
+            </div>
+        </form>
+    </span>
+</body>
+</html>
